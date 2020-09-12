@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-    // http://127.0.0.1:8000/redirect?url=http://www.google.com
+	// http://127.0.0.1:8000/redirect?url=http://www.google.com
 	http.HandleFunc("/redirect", RedirectHandler)
 
 	port := os.Getenv("PORT")
